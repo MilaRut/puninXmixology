@@ -1,0 +1,147 @@
+.intro {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+
+    @include vp-1023 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.intro__video-block {
+  grid-column: 1 / 3;
+}
+
+.intro__video-wrapper {
+  background: url("../img/video-cover.png") center no-repeat;
+  background-size: cover;
+  height: 559px;
+  max-height: 559px;
+  overflow: hidden;
+  border-radius: 20px;
+
+  @include vp-767 {
+    height: 236px;
+    max-height: 236px;
+  }
+
+  video {
+    display: none;
+    object-fit: cover;
+    height: 559px;
+    border-radius: 20px;
+
+    @include vp-767 {
+      height: 236px;
+    }
+  }
+}
+
+.intro__block {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 54px;
+  min-height: 445px;
+
+  @include vp-1023 {
+    padding: 20px 7px;
+    min-height: 222px;
+  }
+}
+
+.intro__primary-block {
+  grid-column: 1 / 2;
+  background: url('../img/primary-cover.png') center no-repeat;
+  background-size: cover;
+
+  @include retina {
+    background: url('../img/primary-cover@2x.png') center no-repeat;
+    background-size: cover;
+  }
+
+  .intro__logo {
+    @include vp-1023 {
+      width: 141px;
+      height: 28px;
+    }
+  }
+}
+
+.intro__secondary-block {
+  grid-column: 2 / 3;
+  background: url('../img/secondary-cover.png') center no-repeat;
+  background-size: cover;
+
+  @include retina {
+    background: url('../img/secondary-cover@2x.png') center no-repeat;
+    background-size: cover;
+  }
+
+  .intro__logo {
+    @include vp-1023 {
+      width: 212px;
+      height: 28px;
+    }
+  }
+}
+
+.intro__list {
+  text-align: center;
+}
+
+.intro__item {
+  @include font-settings ($ff-avenir, 500, 1.125rem, 1.39, $color-default-white);
+
+  @include vp-1023 {
+    font-size: 0.75rem;
+    line-height: 1.42;
+  }
+
+  b {
+    color: $color-persimmon;
+    font-weight: 500;
+  }
+}
+
+.intro__btn {
+  display: flex;
+  align-items: center;
+
+  span {
+    @include font-settings ($ff-avenir, 500, 1.154rem, 1.35, $color-default-white);
+    padding: 0 10px;
+
+    @include vp-1023 {
+      font-size: 0.75rem;
+      line-height: 1.33;
+    }
+  }
+}
+
+.intro__btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: $color-default-white;
+
+  @include vp-1023 {
+    width: 25px;
+    height: 25px;
+  }
+
+  svg {
+    @include vp-1023 {
+      width: 15px;
+      height: 9px;
+    }
+  }
+}

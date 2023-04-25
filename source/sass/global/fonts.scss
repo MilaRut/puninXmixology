@@ -1,19 +1,9 @@
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "Rouble";
-
-//   font-display: swap;
-//   src:
-//     url("../fonts/rouble.woff2") format("woff2");
-// }
-
 @font-face {
   font-style: normal;
-  font-weight: 400;
-  font-family: "";
-
+  font-weight: 500;
+  font-family: "Avenir";
   font-display: swap;
   src:
-    url("../fonts/.woff2") format("woff2");
+    url("../fonts/AvenirNextCyr-Medium.woff") format("woff2"),
+    url("../fonts/AvenirNextCyr-Medium.woff2") format("woff");
 }

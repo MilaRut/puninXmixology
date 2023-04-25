@@ -1,0 +1,60 @@
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: $color-default-black;
+  z-index: 100000;
+}
+
+.preloader__container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.preloader__item {
+  position: absolute;
+  display: block;
+  animation: preloader-rotate 3s infinite linear;
+
+  @include vp-1023 {
+
+    width: 200px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.preloader.hide-preloader {
+  animation: hide-preloader 1s;
+}
+
+.preloader.preloader-hidden {
+  display: none;
+}
+
+@keyframes hide-preloader {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
