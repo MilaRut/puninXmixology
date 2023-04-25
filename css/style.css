@@ -741,9 +741,11 @@ button,
 }
 
 .intro__video-wrapper video {
+  display: none;
   -o-object-fit: cover;
   object-fit: cover;
   height: 559px;
+  border-radius: 20px;
 }
 
 .intro__block {
@@ -906,12 +908,8 @@ button,
   }
 
   .intro__video-wrapper {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    max-height: -webkit-fit-content;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
+    height: 236px;
+    max-height: 236px;
   }
 
   .intro__video-wrapper video {
