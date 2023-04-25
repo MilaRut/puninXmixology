@@ -421,7 +421,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: #000000 url("../../img/black-paper-texture.png") center no-repeat;
+  background: #000000 url("../img/black-paper-texture.png") center no-repeat;
   background-size: cover;
 }
 
