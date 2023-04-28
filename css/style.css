@@ -619,7 +619,7 @@ button,
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 7px 6px;
+  padding: 7px 100px;
 }
 
 .preloader {
@@ -739,7 +739,7 @@ button,
 .intro__video-wrapper {
   background: url("../img/video-cover.png") center no-repeat;
   background-size: cover;
-  height: 54vh;
+  height: 60vh;
   overflow: hidden;
   border-radius: 20px;
 }
@@ -767,8 +767,8 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 54px;
-  height: 44vh;
+  padding: 20px 54px;
+  height: 38vh;
 }
 
 .intro__primary-block {
@@ -796,7 +796,7 @@ button,
   font-style: normal;
   font-weight: 500;
   font-size: 1.125rem;
-  line-height: 1.39;
+  line-height: 1.1;
   color: #ffffff;
 }
 
@@ -849,6 +849,20 @@ button,
     padding: 20px 7px;
     min-height: 222px;
   }
+
+  .intro__item {
+    font-size: 0.75rem;
+  }
+
+  .intro__btn span {
+    font-size: 0.75rem;
+    line-height: 1.33;
+  }
+
+  .intro__btn-icon {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -883,21 +897,6 @@ button,
     height: 28px;
   }
 
-  .intro__item {
-    font-size: 0.75rem;
-    line-height: 1.42;
-  }
-
-  .intro__btn span {
-    font-size: 0.75rem;
-    line-height: 1.33;
-  }
-
-  .intro__btn-icon {
-    width: 25px;
-    height: 25px;
-  }
-
   .intro__btn-icon svg {
     width: 15px;
     height: 9px;
@@ -905,6 +904,10 @@ button,
 }
 
 @media (max-width: 767px) {
+  .container {
+    padding: 7px 6px;
+  }
+
   .intro__video-wrapper {
     height: 236px;
     max-height: 236px;
