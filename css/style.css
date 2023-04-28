@@ -619,7 +619,7 @@ button,
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 7px 100px;
+  padding: 7px 6px;
 }
 
 .preloader {
@@ -737,7 +737,7 @@ button,
 }
 
 .intro__video-wrapper {
-  background: url("../img/video-cover.png") center no-repeat;
+  background: url("../img/bg01.jpg") center no-repeat;
   background-size: cover;
   height: 60vh;
   overflow: hidden;
@@ -904,10 +904,6 @@ button,
 }
 
 @media (max-width: 767px) {
-  .container {
-    padding: 7px 6px;
-  }
-
   .intro__video-wrapper {
     height: 236px;
     max-height: 236px;
