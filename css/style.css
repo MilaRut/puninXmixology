@@ -739,8 +739,7 @@ button,
 .intro__video-wrapper {
   background: url("../img/video-cover.png") center no-repeat;
   background-size: cover;
-  height: 559px;
-  max-height: 559px;
+  height: 54vh;
   overflow: hidden;
   border-radius: 20px;
 }
@@ -749,7 +748,7 @@ button,
   display: none;
   -o-object-fit: cover;
   object-fit: cover;
-  height: 559px;
+  height: 100%;
   border-radius: 20px;
 }
 
@@ -769,7 +768,7 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 54px;
-  min-height: 445px;
+  height: 44vh;
 }
 
 .intro__primary-block {
@@ -841,6 +840,17 @@ button,
   background-color: #ffffff;
 }
 
+@media (max-width: 1399px) {
+  .intro__video-wrapper {
+    max-height: 559px;
+  }
+
+  .intro__block {
+    padding: 20px 7px;
+    min-height: 222px;
+  }
+}
+
 @media (max-width: 1023px) {
   .preloader__item {
     width: 200px;
@@ -861,11 +871,6 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-
-  .intro__block {
-    padding: 20px 7px;
-    min-height: 222px;
   }
 
   .intro__primary-block .intro__logo {
